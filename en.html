@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HOI4 / TNO Modding Resources</title>
+<meta name="description" content="Tutorials, documentation and tools for building TNO-style mods, grouped by type. Click any title to open it. Updated regularly — corrections and additions welcome.">
+<style>
+:root{--bg:#0f1214;--panel:#171b1d;--line:#262b2e;--fg:#e8eaec;--muted:#9aa1a7;--accent:#8ea2ff;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.65 -apple-system,"PingFang SC","Noto Sans SC","Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:48px 24px 96px}
+header.top{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:26px}
+.topline{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+h1{font-size:30px;margin:0 0 10px;letter-spacing:.3px}
+.lang{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;white-space:nowrap}
+.lang:hover{border-color:#5b63a8;color:#cfd6ff}
+.lead{color:var(--muted);margin:0;max-width:70ch}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 8px;align-items:center}
+input[type=search]{flex:1;min-width:220px;background:var(--panel);border:1px solid var(--line);color:var(--fg);padding:11px 15px;border-radius:10px;outline:none;font-size:14px}
+input[type=search]:focus{border-color:#6a5acd}
+.chip{background:transparent;border:1px solid var(--line);color:var(--muted);padding:7px 13px;border-radius:999px;cursor:pointer;font-size:13px}
+.chip.on{border-color:#5b63a8;color:#cfd6ff;background:#1a1e33}
+.count{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:16px 18px;transition:border-color .15s}
+.card:hover{border-color:#3c4549}
+.tag{font-size:11px;color:var(--muted);letter-spacing:.4px;margin-bottom:6px}
+.card h3{margin:0 0 6px;font-size:15.5px;font-weight:600}
+.card h3 a{color:#eef1f3;text-decoration:none}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.card p{margin:0;color:var(--muted);font-size:13.5px}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media (max-width:640px){.wrap{padding:28px 16px 70px}h1{font-size:23px}}
+</style></head>
+<body><div class="wrap">
+<header class="top">
+<div class="topline"><h1>HOI4 / TNO Modding Resources</h1><a class="lang" href="index.html">中文</a></div>
+<p class="lead">Tutorials, documentation and tools for building TNO-style mods, grouped by type. Click any title to open it. Updated regularly — corrections and additions welcome.</p>
+<div class="controls">
+<input id="q" type="search" placeholder="Search: gfx / portrait / GUI / tools …" aria-label="search">
+<button class="chip on" data-f="all">All</button><button class="chip" data-f="gfx">Icons &amp; Portraits</button><button class="chip" data-f="code">Code · GUI &amp; Scripting</button><button class="chip" data-f="tool">Tools &amp; Plugins</button><button class="chip" data-f="video">Video Tutorials</button><button class="chip" data-f="misc">Misc</button><span class="count" id="count">31</span>
+</div>
+</header>
+<main class="grid" id="grid">
+<article class="card" data-k="tno gfx search search icons and textures across the whole mod by name. see the source image and asset path instantly — check here before making new assets." data-c="gfx">
+  <div class="tag">Icons &amp; Portraits</div>
+  <h3><a href="https://fallingstory.github.io/gfx-search/" target="_blank" rel="noopener">TNO GFX Search</a></h3>
+  <p>Search icons and textures across the whole mod by name. See the source image and asset path instantly — check here before making new assets.</p>
+</article>
+<article class="card" data-k="collin&#x27;s icon guide (video) a full walkthrough of drawing a tno-style focus icon, using realm of ash as the example." data-c="gfx">
+  <div class="tag">Icons &amp; Portraits</div>
+  <h3><a href="https://www.youtube.com/watch?v=qdEh626E-7c" target="_blank" rel="noopener">Collin&#x27;s Icon Guide (video)</a></h3>
+  <p>A full walkthrough of drawing a TNO-style focus icon, using Realm of Ash as the example.</p>
+</article>
+<article class="card" data-k="hoi4 portrait tutorial (tno/eoanb style) from historical photo to tno-style leader portrait: retouching and colouring workflow." data-c="gfx">
+  <div class="tag">Icons &amp; Portraits</div>
+  <h3><a href="https://www.youtube.com/watch?v=UwEc_vno1IA" target="_blank" rel="noopener">HOI4 Portrait Tutorial (TNO/EoaNB style)</a></h3>
+  <p>From historical photo to TNO-style leader portrait: retouching and colouring workflow.</p>
+</article>
+<article class="card" data-k="photo restoration in 16 minutes most portraits start as historical photos. covers denoising, damage repair and colouring." data-c="gfx">
+  <div class="tag">Icons &amp; Portraits</div>
+  <h3><a href="https://www.youtube.com/watch?v=XZnm1JJj2pw" target="_blank" rel="noopener">Photo Restoration in 16 Minutes</a></h3>
+  <p>Most portraits start as historical photos. Covers denoising, damage repair and colouring.</p>
+</article>
+<article class="card" data-k="paint.net palette import official docs on importing a custom palette — handy for reusing the tno font colours." data-c="gfx">
+  <div class="tag">Icons &amp; Portraits</div>
+  <h3><a href="https://www.getpaint.net/doc/latest/WorkingWithPalettes.html" target="_blank" rel="noopener">Paint.NET Palette Import</a></h3>
+  <p>Official docs on importing a custom palette — handy for reusing the TNO font colours.</p>
+</article>
+<article class="card" data-k="portrait workflow chart a branching flowchart from picking a photo, through retouching, to exporting dds." data-c="gfx">
+  <div class="tag">Icons &amp; Portraits</div>
+  <h3><a href="https://drive.google.com/file/d/1WavQAu7tUwVySOOeVOxTe0FRDB-wCyRc/view" target="_blank" rel="noopener">Portrait Workflow Chart</a></h3>
+  <p>A branching flowchart from picking a photo, through retouching, to exporting DDS.</p>
+</article>
+<article class="card" data-k="europeana aggregator of european archives — high-resolution historical photos and event imagery." data-c="gfx">
+  <div class="tag">Icons &amp; Portraits</div>
+  <h3><a href="https://www.europeana.eu/en" target="_blank" rel="noopener">Europeana</a></h3>
+  <p>Aggregator of European archives — high-resolution historical photos and event imagery.</p>
+</article>
+<article class="card" data-k="gui asset guidelines (wiki) sizes, naming, nine-slice slicing and import rules for gui assets — the general baseline." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://hoi4.paradoxwikis.com/Graphical_user_interface" target="_blank" rel="noopener">GUI Asset Guidelines (Wiki)</a></h3>
+  <p>Sizes, naming, nine-slice slicing and import rules for GUI assets — the general baseline.</p>
+</article>
+<article class="card" data-k="scripted gui guide writing scripted guis from scratch: triggers, effects and how they map to each other." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://docs.google.com/document/d/1bcyw6ohpZXgUH89jQzwqBIuE_aqJcthDo9529Rqwzls/edit" target="_blank" rel="noopener">Scripted GUI Guide</a></h3>
+  <p>Writing scripted GUIs from scratch: triggers, effects and how they map to each other.</p>
+</article>
+<article class="card" data-k="official scripted gui examples paradox&#x27;s example collection — the most reliable starting point for learning the syntax." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1678247250" target="_blank" rel="noopener">Official Scripted GUI Examples</a></h3>
+  <p>Paradox&#x27;s example collection — the most reliable starting point for learning the syntax.</p>
+</article>
+<article class="card" data-k="scripted gui (wiki) syntax overview and common pitfalls; read alongside the two entries above." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://hoi4.paradoxwikis.com/Scripted_GUI" target="_blank" rel="noopener">Scripted GUI (Wiki)</a></h3>
+  <p>Syntax overview and common pitfalls; read alongside the two entries above.</p>
+</article>
+<article class="card" data-k="events (wiki) structure of events, news events and super events — start here for your first event." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://hoi4.paradoxwikis.com/Events" target="_blank" rel="noopener">Events (Wiki)</a></h3>
+  <p>Structure of events, news events and super events — start here for your first event.</p>
+</article>
+<article class="card" data-k="state modding (wiki) data structures for creating and editing states, including state description panels." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://hoi4.paradoxwikis.com/State_modding" target="_blank" rel="noopener">State Modding (Wiki)</a></h3>
+  <p>Data structures for creating and editing states, including state description panels.</p>
+</article>
+<article class="card" data-k="nsb armor effects cheatsheet quick reference for driving the new armour system from effects." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://docs.google.com/document/d/1WiMwLlka6cioyIQB4hG4rNFZI8DZmvkEEvKcQyLzAVY/edit" target="_blank" rel="noopener">NSB Armor Effects Cheatsheet</a></h3>
+  <p>Quick reference for driving the new armour system from effects.</p>
+</article>
+<article class="card" data-k="intelligence report templates ready-made templates and phrasing for writing intelligence report events." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://docs.google.com/document/d/1B4lJnmyeYO5q8LkKKIZGdp3wwxSbB2D-YZwvyRrG-Ps/edit" target="_blank" rel="noopener">Intelligence Report Templates</a></h3>
+  <p>Ready-made templates and phrasing for writing intelligence report events.</p>
+</article>
+<article class="card" data-k="hoi4 variables (wiki) variable scopes and access patterns — required reading for complex effects." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://hoi4.paradoxwikis.com/Variables" target="_blank" rel="noopener">HOI4 Variables (Wiki)</a></h3>
+  <p>Variable scopes and access patterns — required reading for complex effects.</p>
+</article>
+<article class="card" data-k="cwtools hoi4 config reference the game script parsed into structured docs — the fastest way to check valid effect parameters." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://cwtools.github.io/cwtools-hoi4-config/" target="_blank" rel="noopener">CWTools HOI4 Config Reference</a></h3>
+  <p>The game script parsed into structured docs — the fastest way to check valid effect parameters.</p>
+</article>
+<article class="card" data-k="script profiler run the game with -profile and read the report to find laggy effects." data-c="code">
+  <div class="tag">Code · GUI &amp; Scripting</div>
+  <h3><a href="https://forum.paradoxplaza.com/forum/threads/script-profiler-in-1-6-0.1158737/" target="_blank" rel="noopener">Script Profiler</a></h3>
+  <p>Run the game with -profile and read the report to find laggy effects.</p>
+</article>
+<article class="card" data-k="draw.io focus tree converter draw a focus tree in draw.io and convert it straight into hoi4 focus code." data-c="tool">
+  <div class="tag">Tools &amp; Plugins</div>
+  <h3><a href="https://flaxbeard.github.io/tno-draw-io-converter/" target="_blank" rel="noopener">draw.io Focus Tree Converter</a></h3>
+  <p>Draw a focus tree in draw.io and convert it straight into HOI4 focus code.</p>
+</article>
+<article class="card" data-k="vscode: hoi4 mod utilities localisation and gfx preview plus syntax highlighting — strongly recommended." data-c="tool">
+  <div class="tag">Tools &amp; Plugins</div>
+  <h3><a href="https://marketplace.visualstudio.com/items?itemName=Chaofan.hoi4modutilities" target="_blank" rel="noopener">VSCode: HOI4 Mod Utilities</a></h3>
+  <p>Localisation and GFX preview plus syntax highlighting — strongly recommended.</p>
+</article>
+<article class="card" data-k="gitlens (vscode) see who last touched each line — invaluable when tracking down regressions." data-c="tool">
+  <div class="tag">Tools &amp; Plugins</div>
+  <h3><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" rel="noopener">GitLens (VSCode)</a></h3>
+  <p>See who last touched each line — invaluable when tracking down regressions.</p>
+</article>
+<article class="card" data-k="ocrmypdf adds a text layer to scanned pdfs so old documents become searchable." data-c="tool">
+  <div class="tag">Tools &amp; Plugins</div>
+  <h3><a href="https://github.com/ocrmypdf/OCRmyPDF" target="_blank" rel="noopener">OCRmyPDF</a></h3>
+  <p>Adds a text layer to scanned PDFs so old documents become searchable.</p>
+</article>
+<article class="card" data-k="zotero reference manager — keeps lore research and sources in order." data-c="tool">
+  <div class="tag">Tools &amp; Plugins</div>
+  <h3><a href="https://www.zotero.org/start" target="_blank" rel="noopener">Zotero</a></h3>
+  <p>Reference manager — keeps lore research and sources in order.</p>
+</article>
+<article class="card" data-k="sharex screenshot, screen recording and gif capture in one tool — great for tutorial images." data-c="tool">
+  <div class="tag">Tools &amp; Plugins</div>
+  <h3><a href="https://getsharex.com/" target="_blank" rel="noopener">ShareX</a></h3>
+  <p>Screenshot, screen recording and GIF capture in one tool — great for tutorial images.</p>
+</article>
+<article class="card" data-k="veed subtitles auto-generates and translates subtitles — useful when cutting archival footage." data-c="tool">
+  <div class="tag">Tools &amp; Plugins</div>
+  <h3><a href="https://www.veed.io/" target="_blank" rel="noopener">Veed Subtitles</a></h3>
+  <p>Auto-generates and translates subtitles — useful when cutting archival footage.</p>
+</article>
+<article class="card" data-k="political pie chart generator fill in a google sheet and it generates parliament pie charts." data-c="tool">
+  <div class="tag">Tools &amp; Plugins</div>
+  <h3><a href="https://docs.google.com/spreadsheets/d/1EsLnfiwNbaV1OZgOSPdqMw425irVUneIkdnxFm3HQBQ/edit" target="_blank" rel="noopener">Political Pie Chart Generator</a></h3>
+  <p>Fill in a Google Sheet and it generates parliament pie charts.</p>
+</article>
+<article class="card" data-k="ai for hoi4 modding practical demos of using ai to generate or rewrite scripts and help with assets." data-c="video">
+  <div class="tag">Video Tutorials</div>
+  <h3><a href="https://www.youtube.com/watch?v=pH_VpBs0mIk" target="_blank" rel="noopener">AI for HOI4 Modding</a></h3>
+  <p>Practical demos of using AI to generate or rewrite scripts and help with assets.</p>
+</article>
+<article class="card" data-k="[hoi4 modding] creating custom gui builds a custom gui window from scratch." data-c="video">
+  <div class="tag">Video Tutorials</div>
+  <h3><a href="https://www.youtube.com/watch?v=QvJ4h3XCXO8" target="_blank" rel="noopener">[HOI4 Modding] Creating Custom GUI</a></h3>
+  <p>Builds a custom GUI window from scratch.</p>
+</article>
+<article class="card" data-k="high quality maps with qgis using qgis to produce state borders and map artwork." data-c="video">
+  <div class="tag">Video Tutorials</div>
+  <h3><a href="https://www.youtube.com/watch?v=DPVKcQf0rik" target="_blank" rel="noopener">High Quality Maps with QGIS</a></h3>
+  <p>Using QGIS to produce state borders and map artwork.</p>
+</article>
+<article class="card" data-k="title case tool keeps focus names and localisation capitalisation consistent." data-c="misc">
+  <div class="tag">Misc</div>
+  <h3><a href="https://capitalizemytitle.com/" target="_blank" rel="noopener">Title Case Tool</a></h3>
+  <p>Keeps focus names and localisation capitalisation consistent.</p>
+</article>
+<article class="card" data-k="batch rename guide batch-renaming dds and png files." data-c="misc">
+  <div class="tag">Misc</div>
+  <h3><a href="https://www.maketecheasier.com/batch-rename-files-in-windows/" target="_blank" rel="noopener">Batch Rename Guide</a></h3>
+  <p>Batch-renaming DDS and PNG files.</p>
+</article>
+</main>
+<footer>All links point to their original sources; rights remain with their authors. Dead links and suggestions welcome.</footer>
+</div>
+<script>
+const q=document.getElementById('q'),grid=document.getElementById('grid'),count=document.getElementById('count');
+const cards=[...grid.children];let filter='all';
+function render(){const s=q.value.trim().toLowerCase();let k=0;
+ cards.forEach(c=>{const ok=(filter==='all'||c.dataset.c===filter)&&(!s||c.dataset.k.includes(s));c.style.display=ok?'':'none';if(ok)k++;});
+ count.textContent=k+' / 31';}
+q.addEventListener('input',render);
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');filter=b.dataset.f;render();}));
+</script>
+</body></html>

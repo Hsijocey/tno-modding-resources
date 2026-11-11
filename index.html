@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HOI4 / TNO Modding 资源合集</title>
+<meta name="description" content="做 TNO 风格 mod 时常用到的教程、文档与工具，按类型整理，点击标题直接跳转。持续更新，欢迎补充或修正。">
+<style>
+:root{--bg:#0f1214;--panel:#171b1d;--line:#262b2e;--fg:#e8eaec;--muted:#9aa1a7;--accent:#8ea2ff;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.65 -apple-system,"PingFang SC","Noto Sans SC","Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:48px 24px 96px}
+header.top{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:26px}
+.topline{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+h1{font-size:30px;margin:0 0 10px;letter-spacing:.3px}
+.lang{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 14px;text-decoration:none;white-space:nowrap}
+.lang:hover{border-color:#5b63a8;color:#cfd6ff}
+.lead{color:var(--muted);margin:0;max-width:70ch}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 8px;align-items:center}
+input[type=search]{flex:1;min-width:220px;background:var(--panel);border:1px solid var(--line);color:var(--fg);padding:11px 15px;border-radius:10px;outline:none;font-size:14px}
+input[type=search]:focus{border-color:#6a5acd}
+.chip{background:transparent;border:1px solid var(--line);color:var(--muted);padding:7px 13px;border-radius:999px;cursor:pointer;font-size:13px}
+.chip.on{border-color:#5b63a8;color:#cfd6ff;background:#1a1e33}
+.count{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:16px 18px;transition:border-color .15s}
+.card:hover{border-color:#3c4549}
+.tag{font-size:11px;color:var(--muted);letter-spacing:.4px;margin-bottom:6px}
+.card h3{margin:0 0 6px;font-size:15.5px;font-weight:600}
+.card h3 a{color:#eef1f3;text-decoration:none}
+.card h3 a:hover{color:var(--accent);text-decoration:underline}
+.card p{margin:0;color:var(--muted);font-size:13.5px}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media (max-width:640px){.wrap{padding:28px 16px 70px}h1{font-size:23px}}
+</style></head>
+<body><div class="wrap">
+<header class="top">
+<div class="topline"><h1>HOI4 / TNO Modding 资源合集</h1><a class="lang" href="en.html">EN</a></div>
+<p class="lead">做 TNO 风格 mod 时常用到的教程、文档与工具，按类型整理，点击标题直接跳转。持续更新，欢迎补充或修正。</p>
+<div class="controls">
+<input id="q" type="search" placeholder="搜索：gfx / 立绘 / GUI / 工具 …" aria-label="search">
+<button class="chip on" data-f="all">全部</button><button class="chip" data-f="gfx">GFX · 图标与立绘</button><button class="chip" data-f="code">代码 · GUI 与脚本</button><button class="chip" data-f="tool">工具与插件</button><button class="chip" data-f="video">视频教程</button><button class="chip" data-f="misc">其他</button><span class="count" id="count">31</span>
+</div>
+</header>
+<main class="grid" id="grid">
+<article class="card" data-k="tno gfx 搜索器 全模组 gfx 检索站：按名字搜图标、贴图，直接看到原图与资源路径，做资产前先在这查重。" data-c="gfx">
+  <div class="tag">GFX · 图标与立绘</div>
+  <h3><a href="https://fallingstory.github.io/gfx-search/" target="_blank" rel="noopener">TNO GFX 搜索器</a></h3>
+  <p>全模组 GFX 检索站：按名字搜图标、贴图，直接看到原图与资源路径，做资产前先在这查重。</p>
+</article>
+<article class="card" data-k="collin 的图标制作指南（视频） 以 realm of ash 为例，完整走一遍 tno 风格国策图标的绘制流程。" data-c="gfx">
+  <div class="tag">GFX · 图标与立绘</div>
+  <h3><a href="https://www.youtube.com/watch?v=qdEh626E-7c" target="_blank" rel="noopener">Collin 的图标制作指南（视频）</a></h3>
+  <p>以 Realm of Ash 为例，完整走一遍 TNO 风格国策图标的绘制流程。</p>
+</article>
+<article class="card" data-k="hoi4 立绘教程（tno / eoanb 风格） 从原始历史照片到 tno 风格人物立绘的修图与上色流程。" data-c="gfx">
+  <div class="tag">GFX · 图标与立绘</div>
+  <h3><a href="https://www.youtube.com/watch?v=UwEc_vno1IA" target="_blank" rel="noopener">HOI4 立绘教程（TNO / EoaNB 风格）</a></h3>
+  <p>从原始历史照片到 TNO 风格人物立绘的修图与上色流程。</p>
+</article>
+<article class="card" data-k="16 分钟学会老照片修复 立绘素材大多是历史照片，这期讲去噪、补损、上色。" data-c="gfx">
+  <div class="tag">GFX · 图标与立绘</div>
+  <h3><a href="https://www.youtube.com/watch?v=XZnm1JJj2pw" target="_blank" rel="noopener">16 分钟学会老照片修复</a></h3>
+  <p>立绘素材大多是历史照片，这期讲去噪、补损、上色。</p>
+</article>
+<article class="card" data-k="paint.net 调色板导入 把 tno 字体配色做成调色板并导入的官方文档。" data-c="gfx">
+  <div class="tag">GFX · 图标与立绘</div>
+  <h3><a href="https://www.getpaint.net/doc/latest/WorkingWithPalettes.html" target="_blank" rel="noopener">Paint.NET 调色板导入</a></h3>
+  <p>把 TNO 字体配色做成调色板并导入的官方文档。</p>
+</article>
+<article class="card" data-k="立绘制作流程图 从选图、修图到导出 dds 的分支流程图。" data-c="gfx">
+  <div class="tag">GFX · 图标与立绘</div>
+  <h3><a href="https://drive.google.com/file/d/1WavQAu7tUwVySOOeVOxTe0FRDB-wCyRc/view" target="_blank" rel="noopener">立绘制作流程图</a></h3>
+  <p>从选图、修图到导出 DDS 的分支流程图。</p>
+</article>
+<article class="card" data-k="europeana 历史图片库 欧洲档案馆聚合站，找高分辨率历史照片与事件图。" data-c="gfx">
+  <div class="tag">GFX · 图标与立绘</div>
+  <h3><a href="https://www.europeana.eu/en" target="_blank" rel="noopener">Europeana 历史图片库</a></h3>
+  <p>欧洲档案馆聚合站，找高分辨率历史照片与事件图。</p>
+</article>
+<article class="card" data-k="gui 资源制作规范（wiki） gui 素材的尺寸、命名、九宫格切割与导入规范，通用基础。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://hoi4.paradoxwikis.com/Graphical_user_interface" target="_blank" rel="noopener">GUI 资源制作规范（Wiki）</a></h3>
+  <p>GUI 素材的尺寸、命名、九宫格切割与导入规范，通用基础。</p>
+</article>
+<article class="card" data-k="scripted gui 编写指南 从零写 scripted gui：触发器与效果对照。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://docs.google.com/document/d/1bcyw6ohpZXgUH89jQzwqBIuE_aqJcthDo9529Rqwzls/edit" target="_blank" rel="noopener">Scripted GUI 编写指南</a></h3>
+  <p>从零写 scripted GUI：触发器与效果对照。</p>
+</article>
+<article class="card" data-k="scripted gui 官方示例 paradox 官方范例合集，学语法最稳的起点。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1678247250" target="_blank" rel="noopener">Scripted GUI 官方示例</a></h3>
+  <p>Paradox 官方范例合集，学语法最稳的起点。</p>
+</article>
+<article class="card" data-k="scripted gui（wiki 条目） 语法总览与常见坑，和上面两份配合看。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://hoi4.paradoxwikis.com/Scripted_GUI" target="_blank" rel="noopener">Scripted GUI（Wiki 条目）</a></h3>
+  <p>语法总览与常见坑，和上面两份配合看。</p>
+</article>
+<article class="card" data-k="事件系统 events（wiki） 事件、新闻事件、超事件的基础结构，写第一个 event 从这里开始。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://hoi4.paradoxwikis.com/Events" target="_blank" rel="noopener">事件系统 Events（Wiki）</a></h3>
+  <p>事件、新闻事件、超事件的基础结构，写第一个 event 从这里开始。</p>
+</article>
+<article class="card" data-k="州与地图 state modding（wiki） 建州、改州、州介绍面板所需的数据结构。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://hoi4.paradoxwikis.com/State_modding" target="_blank" rel="noopener">州与地图 State modding（Wiki）</a></h3>
+  <p>建州、改州、州介绍面板所需的数据结构。</p>
+</article>
+<article class="card" data-k="nsb 装甲系统 effect 写法 新装甲系统在 effect 里的速查。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://docs.google.com/document/d/1WiMwLlka6cioyIQB4hG4rNFZI8DZmvkEEvKcQyLzAVY/edit" target="_blank" rel="noopener">NSB 装甲系统 effect 写法</a></h3>
+  <p>新装甲系统在 effect 里的速查。</p>
+</article>
+<article class="card" data-k="情报报告事件模板 写 intelligence report 事件可直接套用的模板与措辞。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://docs.google.com/document/d/1B4lJnmyeYO5q8LkKKIZGdp3wwxSbB2D-YZwvyRrG-Ps/edit" target="_blank" rel="noopener">情报报告事件模板</a></h3>
+  <p>写 Intelligence Report 事件可直接套用的模板与措辞。</p>
+</article>
+<article class="card" data-k="hoi4 变量 wiki 变量作用域与访问方式，写复杂 effect 必备。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://hoi4.paradoxwikis.com/Variables" target="_blank" rel="noopener">HOI4 变量 Wiki</a></h3>
+  <p>变量作用域与访问方式，写复杂 effect 必备。</p>
+</article>
+<article class="card" data-k="cwtools hoi4 配置参考 把游戏脚本解析成结构化文档，查 effect 合法参数特别快。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://cwtools.github.io/cwtools-hoi4-config/" target="_blank" rel="noopener">CWTools HOI4 配置参考</a></h3>
+  <p>把游戏脚本解析成结构化文档，查 effect 合法参数特别快。</p>
+</article>
+<article class="card" data-k="脚本性能 profiler 用 -profile 跑性能报告，定位卡顿的 effect。" data-c="code">
+  <div class="tag">代码 · GUI 与脚本</div>
+  <h3><a href="https://forum.paradoxplaza.com/forum/threads/script-profiler-in-1-6-0.1158737/" target="_blank" rel="noopener">脚本性能 Profiler</a></h3>
+  <p>用 -profile 跑性能报告，定位卡顿的 effect。</p>
+</article>
+<article class="card" data-k="draw.io 国策树转换器 在 draw.io 里画国策树，一键转成 hoi4 focus 代码。" data-c="tool">
+  <div class="tag">工具与插件</div>
+  <h3><a href="https://flaxbeard.github.io/tno-draw-io-converter/" target="_blank" rel="noopener">draw.io 国策树转换器</a></h3>
+  <p>在 draw.io 里画国策树，一键转成 HOI4 focus 代码。</p>
+</article>
+<article class="card" data-k="vscode: hoi4 mod utilities 本地化与 gfx 预览、语法高亮，写 mod 强烈推荐。" data-c="tool">
+  <div class="tag">工具与插件</div>
+  <h3><a href="https://marketplace.visualstudio.com/items?itemName=Chaofan.hoi4modutilities" target="_blank" rel="noopener">VSCode: HOI4 Mod Utilities</a></h3>
+  <p>本地化与 GFX 预览、语法高亮，写 mod 强烈推荐。</p>
+</article>
+<article class="card" data-k="gitlens（vscode） 查看每行代码的修改者，协调查错很好用。" data-c="tool">
+  <div class="tag">工具与插件</div>
+  <h3><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" rel="noopener">GitLens（VSCode）</a></h3>
+  <p>查看每行代码的修改者，协调查错很好用。</p>
+</article>
+<article class="card" data-k="ocrmypdf 给扫描版 pdf 加文字层，方便检索旧资料。" data-c="tool">
+  <div class="tag">工具与插件</div>
+  <h3><a href="https://github.com/ocrmypdf/OCRmyPDF" target="_blank" rel="noopener">OCRmyPDF</a></h3>
+  <p>给扫描版 PDF 加文字层，方便检索旧资料。</p>
+</article>
+<article class="card" data-k="zotero 文献管理，整理 lore 资料来源。" data-c="tool">
+  <div class="tag">工具与插件</div>
+  <h3><a href="https://www.zotero.org/start" target="_blank" rel="noopener">Zotero</a></h3>
+  <p>文献管理，整理 lore 资料来源。</p>
+</article>
+<article class="card" data-k="sharex 截图、录屏、gif 一体，做教程图和小样很方便。" data-c="tool">
+  <div class="tag">工具与插件</div>
+  <h3><a href="https://getsharex.com/" target="_blank" rel="noopener">ShareX</a></h3>
+  <p>截图、录屏、GIF 一体，做教程图和小样很方便。</p>
+</article>
+<article class="card" data-k="veed 字幕与翻译 自动生成字幕并翻译，处理档案影像素材时用。" data-c="tool">
+  <div class="tag">工具与插件</div>
+  <h3><a href="https://www.veed.io/" target="_blank" rel="noopener">Veed 字幕与翻译</a></h3>
+  <p>自动生成字幕并翻译，处理档案影像素材时用。</p>
+</article>
+<article class="card" data-k="政治饼图生成器 在 google sheets 填数据即可生成议会饼图。" data-c="tool">
+  <div class="tag">工具与插件</div>
+  <h3><a href="https://docs.google.com/spreadsheets/d/1EsLnfiwNbaV1OZgOSPdqMw425irVUneIkdnxFm3HQBQ/edit" target="_blank" rel="noopener">政治饼图生成器</a></h3>
+  <p>在 Google Sheets 填数据即可生成议会饼图。</p>
+</article>
+<article class="card" data-k="用 ai 辅助 hoi4 modding 用 ai 生成或改写脚本、辅助做素材的实操演示。" data-c="video">
+  <div class="tag">视频教程</div>
+  <h3><a href="https://www.youtube.com/watch?v=pH_VpBs0mIk" target="_blank" rel="noopener">用 AI 辅助 HOI4 Modding</a></h3>
+  <p>用 AI 生成或改写脚本、辅助做素材的实操演示。</p>
+</article>
+<article class="card" data-k="[hoi4 modding] creating custom gui 从零搭一个自定义 gui 窗口。" data-c="video">
+  <div class="tag">视频教程</div>
+  <h3><a href="https://www.youtube.com/watch?v=QvJ4h3XCXO8" target="_blank" rel="noopener">[HOI4 Modding] Creating Custom GUI</a></h3>
+  <p>从零搭一个自定义 GUI 窗口。</p>
+</article>
+<article class="card" data-k="qgis 制作高质量地图 制作州界与地图素材的 qgis 流程。" data-c="video">
+  <div class="tag">视频教程</div>
+  <h3><a href="https://www.youtube.com/watch?v=DPVKcQf0rik" target="_blank" rel="noopener">QGIS 制作高质量地图</a></h3>
+  <p>制作州界与地图素材的 QGIS 流程。</p>
+</article>
+<article class="card" data-k="标题大小写工具 统一 focus 名称与本地化的大小写风格。" data-c="misc">
+  <div class="tag">其他</div>
+  <h3><a href="https://capitalizemytitle.com/" target="_blank" rel="noopener">标题大小写工具</a></h3>
+  <p>统一 focus 名称与本地化的大小写风格。</p>
+</article>
+<article class="card" data-k="批量重命名方法 批量处理 dds / png 文件名时用。" data-c="misc">
+  <div class="tag">其他</div>
+  <h3><a href="https://www.maketecheasier.com/batch-rename-files-in-windows/" target="_blank" rel="noopener">批量重命名方法</a></h3>
+  <p>批量处理 DDS / PNG 文件名时用。</p>
+</article>
+</main>
+<footer>所有链接均指向原始出处，版权归原作者所有。发现失效或更好的资源，欢迎补充。</footer>
+</div>
+<script>
+const q=document.getElementById('q'),grid=document.getElementById('grid'),count=document.getElementById('count');
+const cards=[...grid.children];let filter='all';
+function render(){const s=q.value.trim().toLowerCase();let k=0;
+ cards.forEach(c=>{const ok=(filter==='all'||c.dataset.c===filter)&&(!s||c.dataset.k.includes(s));c.style.display=ok?'':'none';if(ok)k++;});
+ count.textContent=k+' / 31';}
+q.addEventListener('input',render);
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');filter=b.dataset.f;render();}));
+</script>
+</body></html>
